@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sondaj de opinie</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center"><strong>Sondaj de opinie</strong></h1>
+    <p id="description" class="description text-center">
+      Parerea ta conteaza si merita exprimata
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Nume</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Introduceti Numele"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Introduceti adresa de email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Varsta<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Varsta"
+      />
+    </div>
+    <div class="form-group">
+      <p>Care optiune sau rol va reprezinta cel mai bine?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Selectati rolul curent</option>
+        <option value="student">Student</option>
+        <option value="job">Angajat Norma Intreaga</option>
+        <option value="learner">Angajat Jumatate de Norma</option>
+        <option value="preferNo">Prefer sa nu spun</option>
+        <option value="other">Altele</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Vei recomanda pagina unui prieten?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Desigur</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Poate</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Nu sunt sigur/a</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        Care este utilitatea sau caracteristica ta preferata din proiect?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Selectati o optiune</option>
+        <option value="challenges">Provocari</option>
+        <option value="projects">Proiecte</option>
+        <option value="community">Comunitatea</option>
+        <option value="openSource">Accesul la Informatie</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Ce anume ai dori ca sa fie imbunatatit?
+        <span class="clue">(Selecteaza orice se aplica)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Proiecte Front-End</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="back-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Proiecte Back-End</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="data-visualization"
+          type="checkbox"
+          class="input-checkbox"
+        />Vizualizare Date</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="challenges"
+          type="checkbox"
+          class="input-checkbox"
+        />Concursuri</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />Comunitate</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="gitter-help-rooms"
+          type="checkbox"
+          class="input-checkbox"
+        />Ajutor</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="videos"
+          type="checkbox"
+          class="input-checkbox"
+        />Videouri</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="city-meetups"
+          type="checkbox"
+          class="input-checkbox"
+        />Intalniri</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="wiki"
+          type="checkbox"
+          class="input-checkbox"
+        />Enciclopedie</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="forum"
+          type="checkbox"
+          class="input-checkbox"
+        />Forum</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />Cursuri</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Comentarii si sugestii?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Introduceti textul aici ..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Trimite
+      </button>
+    </div>
+  </form>
+</div>
+
+</html>
