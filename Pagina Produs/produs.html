@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Pagina de produs</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="page-wrapper">
+  <header id="header">
+    <div class="logo">
+      <img
+        id="header-img"
+        src="https://www.kia.ro/static/newsite/content/images/main/lg-kia.png"
+        alt="original kia logo"
+      />
+    </div>
+
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#modele">Modele</a></li>
+        <li><a class="nav-link" href="#motorizari">Motorizari</a></li>
+        <li><a class="nav-link" href="#preturi">Preturi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container"></div>
+
+  <section id="hero">
+    <h2>Kia - Masina anului 2019</h2>
+    <form id="form" action="https://www.kia.ro/email-submit">
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Introduceti adresa de email"
+        required
+      />
+      <input id="submit" type="submit" value="Apasa" class="btn" />
+    </form>
+  </section>
+
+  <div class="container">
+    <section id="modele">
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+        <div class="desc">
+          <h2>Kia Ceed</h2>
+          <p>
+            Hatchback inteligent cu putere și atitudine!
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+        <div class="desc">
+          <h2>Dotari Interioare</h2>
+          <p>
+            Geamuri electrice față și spate (cu sistem "Auto Up/Down and Safety" pentru geamurile din față)
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon">
+          <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+        </div>
+        <div class="desc">
+          <h2>Dotari confort si siguranta</h2>
+          <p>
+            Sistem de asistere a evitării coliziunii frontale cu automobilul din față (FCA - FORWARD COLLISION-AVOIDANCE ASSIST).
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="motorizari">
+      <iframe
+        id="video"
+        height="315"
+        src="https://www.youtube.com/embed/3b15TjpOI0E"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <section id="preturi">
+      <div class="masini" id="ceed">
+        <div class="level">Kia Ceed</div>
+        <h2>12600</h2>
+        <ol>
+          <li>1.4 T-GDi 7DCT GT Line</li>
+          <li>1.6 DSL 7DCT HP GT Line</li>
+          <li>1.4 T-GDi 6MT GT Line</li>
+          <li>1.6 DSL 7DCT STAR</li>
+        </ol>
+        <button class="btn">Selecteaza</button>
+      </div>
+      <div class="masini" id="sportage">
+        <div class="level">Kia Sportage</div>
+        <h2>29900</h2>
+        <ol>
+          <li>1.6 T-GDi 7DCT 4x4 GT Line</li>
+          <li>1.6 GDi 6MT 4x2 CLASSIC</li>
+          <li>2.0 DSL HP 6MT 4x4 MILD HYBRID 48V CLASSIC</li>
+          <li>2.0 DSL HP 8AT 4x4 MILD HYBRID 48V GT Line</li>
+        </ol>
+        <button class="btn">Selecteaza</button>
+      </div>
+      <div class="masini" id="stinger">
+        <div class="level">Kia Stinger</div>
+        <h2>31200</h2>
+        <ol>
+          <li>2.0 T-GDi 8AT RWD TREND Line</li>
+          <li>3.3 T-GDi 8AT AWD GT</li>
+          <li>2.2 CRDI 8AT RWD TREND Line</li>
+          <li>2.2 CRDI 8AT AWD GT Line</li>
+        </ol>
+        <button class="btn">Selecteaza</button>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li><a href="#">Conditii</a></li>
+        <li><a href="#">Termeni</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>Copyright 2019, Kia</span>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
