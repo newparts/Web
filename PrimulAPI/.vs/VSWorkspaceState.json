@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\PrimulAPI",
+    "\\PrimulAPI\\Controllers",
+    "\\PrimulAPI\\Models",
+    "\\PrimulAPI\\Views",
+    "\\PrimulAPI\\Views\\Home"
+  ],
+  "SelectedNode": "\\PrimulAPI\\Controllers\\PeopleController.cs",
+  "PreviewInSolutionExplorer": false
+}
